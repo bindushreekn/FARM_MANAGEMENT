@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Registration</title>
+    <link rel="stylesheet" href="registration.css">
+    
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Farmers Welfare</h1>
+        <div id="header-right">
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="ka">Kannada</option>
+            </select>
+        </div>
+    </header>
+
+    <!-- Registration and Login Selection -->
+    <section id="selection">
+        <h2>Welcome!</h2>
+        <button id="createAccountBtn" onclick="showForm('createAccount')">Create An Account</button>
+        <button id="loginBtn" onclick="showForm('login')">Login</button>
+    </section>
+
+    <!-- Registration Form for Customer -->
+    <section id="createAccountForm" class="form-section" style="display: none;">
+    <h2>Register as a Customer</h2>
+    <form id="registrationForm" onsubmit="event.preventDefault(); registerFarmer();">
+    <label for="regName">Name:</label>
+    <input type="text" id="regName" name="regName" required>
+    <label for="regPassword">Password:</label>
+    <input type="password" id="regPassword" name="regPassword" required>
+    <button type="submit">Register</button>
+    </form>
+    </section>
+    
+    <!-- Login Form -->
+    <section id="loginForm" class="form-section" style="display: none;">
+    <h2>Login</h2> <form onsubmit="event.preventDefault(); loginUser();">
+    <label for="loginName">Name:</label>
+    <input type="text" id="loginName" name="loginName" required>
+    <label for="loginPassword">Password:</label>
+    <input type="password" id="loginPassword" name="loginPassword" required>
+    <button type="submit">Login</button> </form>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Farmer Management System. All rights reserved.</p>
+    </footer>
+    <script src="customerRegistration.js"></script>
+</body>
+</html>

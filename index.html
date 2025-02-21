@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Farm Management Application</title>
+
+    <!-- Code for font awesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Code for linking css file -->
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <!-- Code for linking css file -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <!-- header section -->
+    <header class="header">
+        <h1>Farm Management</h1>
+        <a href="#" class="logo"> <i class="fa fa-tree"></i> Agri-Tech</a>
+        <nav class="navbar">
+            <a href="index.html">home</a>
+            <a href="ecommerce.html">marketplace</a>
+            <a href="farming-knowledge.html">farming-knowledge</a>
+            <a href="farmerRegistration.html">crop-management</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa fa-bars" id="menu-btn"></div>
+            <div class="fa fa-cloud" id="weather-btn"></div>
+            <div class="fa fa-user" id="login-btn"></div>
+        </div>
+
+
+        <header id="header">
+        <form action="#" class="login-form">
+            <h3>login now</h3>
+            <div id="header-right">
+                <!-- Dropdown for Customer/Farmer registration -->
+                <div class="dropdown">
+                    <button id="signup-btn">Sign Up</button>
+                    <div class="dropdown-content">
+                        <a href="customerRegistration.html">Customer</a>
+                        <a href="farmerRegistration.html">Farmer</a>
+                    </div>
+                </div>
+                <select id="language-select">
+                    <option value="en">English</option>
+                    <option value="ka">Kannada</option>
+                </select>
+            </div>
+        </form>
+        </header>
+
+        <button id="productPageBtn" style="display:none;" onclick="window.location.href='productListing.html'">Go to Product Listing</button>
+    </header>
+
+    <!-- Farmer Dashboard (Will be hidden initially) -->
+
+    <section id="Dashboard" style="display:none;">
+        <h2>Welcome Farmer</h2>
+        <!-- Button to go to Product Listing Page -->
+        <button id="productPageBtn" style="display:none;" onclick="window.location.href='productListing.html'">Go to Product Listing</button>
+    </section>
+
+    <!-- Customer Dashboard (Initially hidden) -->
+    <section id="customerDashboard" style="display:none;">
+        <h2>Welcome Customer</h2>
+        <!-- Redirect to E-commerce site -->
+        <button onclick="window.location.href='ecommerce.html'">Go to E-Commerce Site</button>
+    </section>
+    <!-- header section -->
+
+
+    <!-- banner section -->
+    <div class="home" id="home">
+        <div class="content">
+            <h3>Welcome to Agricultural Farm Management</h3>
+            <p>This website is designed to be useful for Indian farmers, so everyone can gain information in an easy way about crop management.</p>
+        </div>
+    </div>
+    <!-- banner section -->
+
+    <script src="js/script.js"></script>
+</body>
+</html>

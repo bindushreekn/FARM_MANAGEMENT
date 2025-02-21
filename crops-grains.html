@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crops and Grains</title>
+    <link rel="stylesheet" href="ecommerce.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header id="header">
+        <h1>Crops and Grains</h1>
+        <div id="header-right">
+            <button id="cart-btn" onclick="toggleCart()">Cart (0)</button>
+            
+            <select id="language-select">
+                <option value="en">English</option>
+                <option value="ka">Kannada</option>
+            </select>
+        </div>
+    </header>
+    
+    <!-- Product Listings for Preserves and Processed Goods -->
+    <section id="product-list">
+        <div class="product">
+            <img src="images/preserves-processed1.jpg" alt="Wheat">
+            <h3>Wheat</h3>
+            <p>Price: $5 kg</p>
+            <button onclick="addToCart('Wheat', 5)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed2.jpg" alt="Ragi">
+            <h3>Ragi</h3>
+            <p>Price: $2 per kg</p>
+            <button onclick="addToCart('Ragi', 2)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed3.jpg" alt="Rice">
+            <h3>Rice</h3>
+            <p>Price: $3 per kg</p>
+            <button onclick="addToCart('Rice', 3)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed4.jpg" alt="Sugarcane">
+            <h3>Sugarcane</h3>
+            <p>Price: $3 per kg</p>
+            <button onclick="addToCart('Sugarcane', 3)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed5.jpg" alt="Cotton">
+            <h3>Cotton</h3>
+            <p>Price: $2 per kg</p>
+            <button onclick="addToCart('Cotton', 2)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed6.jpg" alt="Maize">
+            <h3>Maize</h3>
+            <p>Price: $4 per kg</p>
+            <button onclick="addToCart('Maize', 4)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed7.jpg" alt="Coffee">
+            <h3>Coffee</h3>
+            <p>Price: $10 per kg</p>
+            <button onclick="addToCart('Coffee', 10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed8.jpg" alt="Cocunut">
+            <h3>Cocunut</h3>
+            <p>Price: $1 for One </p>
+            <button onclick="addToCart('Cocunut', 1)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed9.jpg" alt="Millets">
+            <h3>Millets</h3>
+            <p>Price: $10 per kg</p>
+            <button onclick="addToCart('Millets',10)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="images/preserves-processed10.jpg" alt="Arecanut">
+            <h3>Arecanut</h3>
+            <p>Price: $20 per kg</p>
+            <button onclick="addToCart('Arecanut', 20)">Add to Cart</button>
+        </div>
+        <!-- Add more products for Preserves and Processed Goods here -->
+    </section>
+
+    <!-- Cart Section (Initially hidden) -->
+    <section id="cart" style="display:none;">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <!-- Cart items will be listed here dynamically -->
+        </ul>
+        <p>Total: $<span id="cartTotal">0</span></p>
+    </section>
+
+    <script src="ecommerce.js"></script>
+</body>
+</html>
